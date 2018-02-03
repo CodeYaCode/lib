@@ -33,17 +33,16 @@ public interface ICache<K extends Serializable, V> {
 	 * Get<code>value<code> by <code>key<code>
 	 * if<code>key<code> is not exist, return<code>null<code>
 	 * @param key
-	 * @param value
 	 * @return
 	 */
-	public V get(K key, V value);
+	public V get(K key);
 	
 	/**
 	 * Return whether contains<code>key<code>
 	 * @param key
 	 * @return
 	 */
-	public boolean contains(K key);
+	public boolean containsKey(K key);
 	
 	/**
 	 * Return whether contains<code>value<code>
